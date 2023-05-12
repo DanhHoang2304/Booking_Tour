@@ -1,0 +1,23 @@
+CREATE DATABASE BOOKING
+
+USE BOOKING
+
+CREATE TABLE ACCOUNT(
+UserName NVARCHAR(255)PRIMARY KEY,
+PASSWORD NVARCHAR(255) NOT NULL,
+Email NVARCHAR(255) NOT NULL
+);
+
+select * from dbo.ACCOUNT
+	
+DROP TABLE ACCOUNT;
+
+INSERT INTO dbo.ACCOUNT
+			(	UserName,
+				PASSWORD,
+				Email
+			)
+VALUES (N'danh', 
+		N'1',
+		N'congdanh2304@gmail.com')
+
